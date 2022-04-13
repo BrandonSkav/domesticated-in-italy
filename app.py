@@ -5,7 +5,7 @@ import pandas as pd
 df = pd.read_csv('drivers.csv')
 df.head(10)
 sl= st.slider('Row?', 0, df.index[-1], 25)
-st.title('Counters POG')
+st.title('F1 Drivers')
 if 'count' not in st.session_state:
     st.session_state.count = 0
 
