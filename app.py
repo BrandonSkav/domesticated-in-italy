@@ -3,8 +3,8 @@ import numpy as np
 import pandas as pd
 
 df = pd.read_csv('drivers.csv')
-df.head(10)
-sl= st.slider('Row?', 0, df.index[-1], 25)
+df.head()
+sl= st.slider('Row Index', 0, df.index[-1], 30)
 st.title('F1 Drivers')
 if 'count' not in st.session_state:
     st.session_state.count = 0
