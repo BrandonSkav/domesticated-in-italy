@@ -18,7 +18,7 @@ st.write(df.iloc[sl:sl+1])
 
 tempComment = st.text_input(label="Comment:")
 
-with open("comments.txt", 'wa') as f:
+with open("comments.csv", 'wa') as f:
     f.writelines(tempComment)
 
 if st.checkbox("Persistent", value=False):
