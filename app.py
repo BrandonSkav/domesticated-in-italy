@@ -1,8 +1,6 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-import sqlite3 as sq
-from sqlite3 import Connection
 import time
 from streamlit import caching
 from streamlit import config
