@@ -17,4 +17,7 @@ st.write('Count = ', st.session_state.count)
 
 st.write(df.iloc[sl:sl+1])
 
-st.text_input(label="Comment:")
+tempComment = st.text_input(label="Comment:")
+
+with open("comments.txt", 'a') as f:
+    f.writelines(tempComment)
